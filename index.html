@@ -1027,6 +1027,154 @@ footer{
 
                 <div>
                     📧 <b>Email:</b>
+                    hungamarr01@gmail.com
+                </div>
+
+                <div>
+                    📱 <b>Phone:</b>
+                    +91 9310149041
+                </div>
+
+                <div>
+                    📍 <b>Location:</b>
+                   ballabgarh Haryana, India 121004
+                </div>
+
+            </div>
+
+        </div>
 
 
-                  
+        <form action="mailto:hungamarr01@gmail.com" method="POST" class="contact-form" id="contactForm">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                SEND MESSAGE 🚀
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="socials">
+
+        <a href="https://github.com/hungamarr">GitHub</a>
+        <a href="https://www.instagram.com/xthakurhariom">Instagram</a>
+        <a href="https://www.linkedin.com/in/hungamarr">LinkedIn</a>
+
+    </div>
+
+    <p>
+        © 2026 Hariom — Frontend Developer
+    </p>
+
+</footer>
+
+
+<script>
+
+/* ================= SCROLL REVEAL ================= */
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+
+    reveals.forEach(element => {
+
+        const windowHeight = window.innerHeight;
+
+        const elementTop =
+            element.getBoundingClientRect().top;
+
+        if(elementTop < windowHeight - 100){
+
+            element.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+
+/* ================= CONTACT FORM ================= */
+
+document
+.getElementById("contactForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("Thank you! Your message has been received 🚀");
+
+    this.reset();
+
+});
+
+
+/* ================= ACTIVE NAV ================= */
+
+const sections = document.querySelectorAll("section");
+const links = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 150;
+
+        if(scrollY >= sectionTop){
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+    links.forEach(link => {
+
+        link.style.color = "";
+
+        if(link.getAttribute("href") === "#" + current){
+
+            link.style.color = "#a719a0";
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
