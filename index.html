@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For You ❤️</title>
+<title>FOR YOU ❤️</title>
 
 <style>
 
@@ -12,7 +13,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Segoe UI, sans-serif;
+    font-family:Segoe UI,sans-serif;
 }
 
 body{
@@ -28,7 +29,7 @@ body{
     color:white;
 }
 
-/* floating hearts */
+/* FLOATING HEARTS */
 
 .heart{
     position:fixed;
@@ -54,11 +55,9 @@ body{
     }
 }
 
-
-/* card */
+/* CARD */
 
 .card{
-
     width:90%;
     max-width:620px;
 
@@ -93,7 +92,6 @@ body{
     }
 }
 
-
 .heart-main{
 
     font-size:70px;
@@ -112,7 +110,6 @@ body{
     }
 }
 
-
 h1{
 
     margin-top:15px;
@@ -120,8 +117,9 @@ h1{
     font-size:42px;
 
     color:#ff9db6;
-}
 
+    text-transform:uppercase;
+}
 
 .name{
 
@@ -131,9 +129,10 @@ h1{
 
     font-weight:bold;
 
+    text-transform:uppercase;
+
     text-shadow:0 0 20px #ff416c;
 }
-
 
 .message{
 
@@ -146,8 +145,9 @@ h1{
     margin:20px auto;
 
     max-width:500px;
-}
 
+    text-transform:uppercase;
+}
 
 .question{
 
@@ -156,10 +156,11 @@ h1{
     font-weight:bold;
 
     margin:25px 0;
+
+    text-transform:uppercase;
 }
 
-
-/* buttons */
+/* BUTTONS */
 
 .buttons{
 
@@ -171,7 +172,6 @@ h1{
 
     flex-wrap:wrap;
 }
-
 
 button{
 
@@ -190,7 +190,6 @@ button{
     transition:.3s;
 }
 
-
 .yes{
 
     background:linear-gradient(45deg,#ff174f,#ff6b91);
@@ -200,14 +199,12 @@ button{
     box-shadow:0 0 20px rgba(255,30,90,.5);
 }
 
-
 .yes:hover{
 
     transform:scale(1.1);
 
     box-shadow:0 0 35px rgba(255,30,90,.9);
 }
-
 
 .no{
 
@@ -216,20 +213,17 @@ button{
     color:#ff315e;
 }
 
-
 .no:hover{
 
-    transform:scale(1.05);
+    transform:scale(1.05) rotate(-3deg);
 }
 
-
-/* result */
+/* RESULT */
 
 .result{
 
     display:none;
 }
-
 
 .result h2{
 
@@ -238,8 +232,9 @@ button{
     color:#ff9db6;
 
     margin:20px 0;
-}
 
+    text-transform:uppercase;
+}
 
 .result p{
 
@@ -248,8 +243,9 @@ button{
     line-height:1.7;
 
     color:#ffe6ec;
-}
 
+    text-transform:uppercase;
+}
 
 .retry{
 
@@ -260,6 +256,25 @@ button{
     color:white;
 }
 
+/* FUN ANIMATION */
+
+.shake{
+
+    animation:shake .4s;
+}
+
+@keyframes shake{
+
+    0%{transform:translateX(0)}
+
+    25%{transform:translateX(-8px)}
+
+    50%{transform:translateX(8px)}
+
+    75%{transform:translateX(-8px)}
+
+    100%{transform:translateX(0)}
+}
 
 @media(max-width:500px){
 
@@ -284,57 +299,60 @@ button{
 </style>
 </head>
 
-
 <body>
 
+<div class="card" id="card">
 
-<div class="card">
-
-    <!-- MAIN PROPOSAL -->
+    <!-- PROPOSAL -->
 
     <div id="proposal">
 
         <div class="heart-main">❤️</div>
 
-        <h1>Hey...</h1>
+        <h1>HEY...</h1>
 
         <!-- CHANGE NAME HERE -->
 
         <div class="name">
-            Sakshi 💕
+            DEEPANSHI (DEEPU)💕
         </div>
 
         <p class="message" id="message">
 
-            Sach bolu?
-
-            Tumhari smile mein kuch toh special hai. 😊
+            SACH BOLU? 😅
 
             <br><br>
 
-            Tumse baat karna,
-            tumhe dekhna,
-            aur tumhari choti-choti baatein
-            mujhe genuinely achhi lagti hain.
+            TUMHARI SMILE MEIN KUCH TOH SPECIAL HAI. 😊❤️
+
+            <br><br>
+
+            TUMSE BAAT KARNA,
+            TUMHE DEKHNA,
+            AUR TUMHARI CHHOTI-CHHOTI BAATEIN
+            MUJHE GENUINELY ACHHI LAGTI HAIN. 🌸
+
+            <br><br>
+
+            AUR HAAN...
+            YE WEBSITE BANANE MEIN KAafi MEHNAT LAGI HAI. 😂
 
         </p>
 
-
         <div class="question" id="question">
 
-            Kya tum mujhe ek chance dogi? ❤️
+            KYA TUM MUJHE EK CHANCE DOGI? ❤️
 
         </div>
-
 
         <div class="buttons">
 
             <button class="yes" onclick="yesClicked()">
-                Yes ❤️
+                YES ❤️
             </button>
 
             <button class="no" onclick="noClicked()">
-                No 😶
+                NO 😶
             </button>
 
         </div>
@@ -351,24 +369,31 @@ button{
         </div>
 
         <h2 id="finalTitle">
-            Theek hai 😊
+            THEEK HAI 😊
         </h2>
 
         <p id="finalMessage">
-            Koi baat nahi ❤️
+
+            KOI BAAT NAHI ❤️
 
             <br><br>
 
-            Main tumhari choice ki respect karta hoon.
+            MAIN TUMHARI CHOICE KI RESPECT KARTA HOON.
 
             <br><br>
 
-            Shayad timing sahi nahi hai...
-            baad mein phir try karunga. 😄🌹
+            SHAYAD TIMING SAHI NAHI HAI...
+
+            <br><br>
+
+            BAAD MEIN PHIR TRY KARUNGA. 😄🌹
+
         </p>
 
         <button class="retry" onclick="location.reload()">
-            Ek baar phir dekho ❤️
+
+            EK BAAR PHIR DEKHO ❤️
+
         </button>
 
     </div>
@@ -378,51 +403,47 @@ button{
 
 <script>
 
-
-/* ---------------------------
-   NO CLICK MESSAGES
----------------------------- */
-
-
 let noCount = 0;
 
+
+/* NO MESSAGES */
 
 const messages = [
 
     {
         text:
-        "No bhi bol diya? 😭😂\n\n" +
-        "Waise tumhari smile abhi bhi bahut cute hai. ❤️",
+        "ACCHA... NO? 😭😂\n\n" +
+        "KOI BAAT NAHI, LEKIN TUMHARI SMILE ABHI BHI CUTE HAI. ❤️",
 
         question:
-        "Ek baar aur sochogi? 🥺"
+        "EK BAAR AUR SOCHOGI? 🥺"
     },
 
     {
         text:
-        "Theek hai... 😅\n\n" +
-        "Lekin honestly, tumhari personality kaafi achhi hai. ✨",
+        "REALLY? 😭😂\n\n" +
+        "LAGTA HAI MERI PROPOSAL KI MARKETING THODI WEAK THI. 😂",
 
         question:
-        "Thoda sa chance? ❤️"
+        "THODA SA CHANCE? ❤️"
     },
 
     {
         text:
-        "Achha ji... phir se No? 😂\n\n" +
-        "Tumhari simplicity hi tumhe itna special banati hai. 🌸",
+        "PHIR SE NO? 😂\n\n" +
+        "OKAY... TUM TOH BAHUT STRONG DECISION MAKER NIKLI. 😭",
 
         question:
-        "Ab toh ek Yes banta hai na? 😄"
+        "AB TOH EK YES BANTA HAI NA? 😄❤️"
     },
 
     {
         text:
-        "Okay okay... samajh raha hoon. 😄\n\n" +
-        "Waise tumhari respect aur kindness mujhe bahut achhi lagti hai. ❤️",
+        "OKAY OKAY... 😅\n\n" +
+        "MAIN SAMJH GAYA. WAise TUMHARI KINDNESS AUR SIMPLICITY MUJHE BAHUT ACHHI LAGTI HAI. ❤️",
 
         question:
-        "Last time pooch raha hoon... ❤️"
+        "LAST TIME POORCH RAHA HOON... ❤️"
     }
 
 ];
@@ -432,8 +453,18 @@ function noClicked(){
 
     noCount++;
 
+    const card = document.getElementById("card");
 
-    /* If she keeps saying NO */
+    /* FUN SHAKE */
+
+    card.classList.remove("shake");
+
+    void card.offsetWidth;
+
+    card.classList.add("shake");
+
+
+    /* FINAL NO */
 
     if(noCount >= 5){
 
@@ -444,29 +475,29 @@ function noClicked(){
         document.getElementById("finalEmoji").innerHTML="🌹";
 
         document.getElementById("finalTitle").innerHTML=
-        "Theek hai... 😊❤️";
+        "THEEK HAI... 😊❤️";
 
         document.getElementById("finalMessage").innerHTML=
 
-        "Koi baat nahi ❤️" +
+        "KOI BAAT NAHI ❤️" +
 
         "<br><br>" +
 
-        "Main tumhari choice ki respect karta hoon." +
+        "MAIN TUMHARI CHOICE KI RESPECT KARTA HOON." +
 
         "<br><br>" +
 
-        "Bas itna kehna tha ki tum mere liye special ho. 🌸" +
+        "BAS ITNA KEHNA THA KI TUM MERE LIYE SPECIAL HO. 🌸" +
 
         "<br><br>" +
 
-        "Baad mein phir try karunga... 😄🌹";
+        "BAAD MEIN PHIR TRY KARUNGA... 😄🌹";
 
         return;
     }
 
 
-    /* Change compliment */
+    /* CHANGE MESSAGE */
 
     let current = messages[noCount - 1];
 
@@ -477,21 +508,17 @@ function noClicked(){
     current.question;
 
 
-    /* Change button text */
+    /* CHANGE NO BUTTON */
 
     const noButton = document.querySelector(".no");
 
     const noTexts = [
 
-        "No 😶",
-
-        "Still No? 🥺",
-
-        "Really? 😭",
-
-        "Pakka No? 😂",
-
-        "Okay... 😅"
+        "NO 😶",
+        "STILL NO? 🥺",
+        "REALLY? 😭",
+        "PAKKA NO? 😂",
+        "OKAY... 😅"
 
     ];
 
@@ -500,10 +527,7 @@ function noClicked(){
 }
 
 
-/* ---------------------------
-   YES
----------------------------- */
-
+/* YES */
 
 function yesClicked(){
 
@@ -514,23 +538,26 @@ function yesClicked(){
     document.getElementById("finalEmoji").innerHTML="💖";
 
     document.getElementById("finalTitle").innerHTML=
-    "You just made my day! 🥹❤️";
+    "YOU JUST MADE MY DAY! 🥹❤️";
 
     document.getElementById("finalMessage").innerHTML=
 
-    "I promise I will always respect you," +
+    "I PROMISE I WILL ALWAYS RESPECT YOU," +
 
     "<br><br>" +
 
-    "make you smile," +
+    "MAKE YOU SMILE," +
 
     "<br><br>" +
 
-    "and appreciate having you in my life. 🌹❤️";
+    "AND APPRECIATE HAVING YOU IN MY LIFE. 🌹❤️" +
+
+    "<br><br>" +
+
+    "OKAY... AB MERI SMILE RUK NAHI RAHI. 😂❤️";
 
 
-
-    /* heart explosion */
+    /* HEART EXPLOSION */
 
     for(let i=0;i<40;i++){
 
@@ -541,10 +568,7 @@ function yesClicked(){
 }
 
 
-/* ---------------------------
-   FLOATING HEARTS
----------------------------- */
-
+/* FLOATING HEARTS */
 
 function createHeart(){
 
@@ -553,33 +577,31 @@ function createHeart(){
     heart.className="heart";
 
     const icons=[
+
         "❤️",
         "💕",
         "💖",
         "💗",
         "💘",
         "🌹",
-        "✨"
+        "✨",
+        "🥰"
+
     ];
 
     heart.innerHTML=
     icons[Math.floor(Math.random()*icons.length)];
 
-
     heart.style.left=
     Math.random()*100+"vw";
-
 
     heart.style.fontSize=
     (15+Math.random()*30)+"px";
 
-
     heart.style.animationDuration=
     (4+Math.random()*5)+"s";
 
-
     document.body.appendChild(heart);
-
 
     setTimeout(()=>{
 
@@ -589,11 +611,10 @@ function createHeart(){
 
 }
 
-
 setInterval(createHeart,500);
-
 
 </script>
 
 </body>
 </html>
+```
